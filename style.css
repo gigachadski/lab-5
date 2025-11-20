@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas: 
+      "header header block2"
+      "block3 block4 block2"
+      "block3 block5 block2"
+      "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 4px;
+    min-height: 100vh; 
+  }
+  
+  header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: orange;
+    padding: 1px;
+    box-sizing: border-box;
+    flex-wrap: wrap; 
+  }
+  .logo {
+    width: 50px;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: right;
+    gap: 10px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+  }
+ 
+  
+  
+
+  .block1 {
+    background: #9fc5e8;
+    padding: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word; 
+    overflow-wrap: anywhere;
+  }
+  
+  .block2 {
+    grid-area: block2;
+    background: #c0e6b2;
+    padding: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  
+  .block3 {
+    grid-area: block3;
+    background: #fce5cd;
+    padding: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  
+  .block4 {
+    grid-area: block4;
+    background: #f9cb9c;
+    padding: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  
+  .block5 {
+    grid-area: block5;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
+ 
+  
+  footer {
+    grid-area: footer;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap; 
+    word-wrap: break-word;
+  }
+  
